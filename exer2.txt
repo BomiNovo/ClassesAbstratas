@@ -1,0 +1,21 @@
+namespace ClassesAbstratas
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Espada espada = new Espada();
+            espada.Nome = "Espada";
+            espada.DanoBase = 50;
+
+            Arco arco = new Arco();
+            arco.Nome = "Arco";
+            arco.DanoBase = 40;
+
+            espada.ExibirInfo();
+            Console.WriteLine(espada.CalcularAtaqueCritico());
+            arco.ExibirInfo();
+            Console.WriteLine(arco.CalcularAtaqueCritico());
+        }
+    }
+}
